@@ -1,4 +1,4 @@
-Algoritmo "positivoNegativo"
+ Algoritmo "positivoNegativo"
 
 Var
 A , B , NUMERO : inteiro
