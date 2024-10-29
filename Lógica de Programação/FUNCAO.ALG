@@ -1,27 +1,25 @@
 Algoritmo " Funcao"
 
 Var
-
 idade: inteiro
-
-procedimento idadeNatação (idade : inteiro )
-var
-idade: inteiro
-inicio
-
-escreval(" Digite a sua idade: ")
-
-
-
-fimProcedimento
 
 Inicio
-escreval("***IDADE NATAÇÃO******")
-escreval ("Infantil A = 5 a 7 anos")
-escreval ("Infantil B = 8 a 11 anos")
-escreval ("Juvenil A = 12 a 13 anos")
-escreval ("Juvenil B = 14 a 17 anos")
-escreval ("Adultos = Maiores de 18 anos")
+escreval("Digite a sua idade: ")
+leia(idade)
 
-
+se(idade >= 5) e (idade <= 7) entao
+  escreval("Infantil A ")
+fimSe
+se (idade >= 8) e (idade <= 11) entao
+  escreval("Infantil B ")
+fimSe
+se (idade >= 12) e (idade <= 13) entao
+  escreval("Juvenil A ")
+fimSe
+se (idade >= 14) e (idade <= 17) entao
+  escreval("Juvenil B ")
+fimSe
+se (idade >= 18) entao
+  escreval("Adulto")
+fimSe
 Fimalgoritmo
