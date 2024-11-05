@@ -1,0 +1,13 @@
+h2{
+    /* font sze - tamanho da fonte */
+    font-size: 4pt;
+}
+img{
+    /* largura */
+    width: 400px;
+    /* altura */
+    height: auto;
+    /* arredonadamento */
+    border-radius: 100px;
+    border: 5px solid purple;
+}
