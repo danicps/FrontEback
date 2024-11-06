@@ -1,9 +1,11 @@
 .categoria{
     font-size: 40px;
+    text-align: center;
 
 }
 .explicacao{
     font-size: 14px; color: black;
+    text-align: center;
 }
 h1{
     font-size: 50px; color:darkolivegreen
@@ -14,4 +16,8 @@ img{
     height: auto;
     border-radius: 200px;
     border: 5px solid green;
+    
+}
+p{
+    text-align: center;
 }
