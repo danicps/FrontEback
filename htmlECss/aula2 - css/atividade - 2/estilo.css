@@ -16,8 +16,12 @@ img{
     height: auto;
     border-radius: 200px;
     border: 5px solid green;
+    margin: 20px auto;
     
 }
 p{
+    text-align: center;
+}
+div{
     text-align: center;
 }
