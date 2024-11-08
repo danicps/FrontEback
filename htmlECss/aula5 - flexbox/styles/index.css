@@ -1,0 +1,55 @@
+*{
+    padding:0%;
+    margin:0%;
+}
+
+.pai{
+    width: 200px;
+    height: 300px;
+    background-color: grey;
+    /* posicionamento no pai */
+    display: flex;
+    margin: 20px;
+}
+
+#pai1{
+    /* alinhamento do eixo x */
+    justify-content: space-around;
+    /* alinhamento do eixo y */
+    align-items: center;
+    /* start (left) - esquerda */
+    /* end (right) - direita */
+    /* center - centro */
+    /* sapce-between - joga os elementos na lateral */
+    /* space-around - joga os elementos a lateral com espaço */ 
+}
+
+#pai2{
+    /* gap - espaço entre elementos */
+    gap: 20px;
+    /* wrap - joga os elementos caso não caibam na tela */
+    flex-wrap: wrap;
+    /* row - linha */
+    /* column - coluna */
+    flex-direction:row;
+
+
+}
+
+.filho{
+    width: 30px;
+    height: 30px;
+}
+
+.f1{
+    background-color: lightblue;
+}
+.f2{
+    background-color: lemonchiffon;
+}
+.f3{
+    background-color:lightpink ;
+}
+.f4{
+    background-color:lightgreen;
+}
