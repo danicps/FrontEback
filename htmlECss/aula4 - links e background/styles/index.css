@@ -48,3 +48,27 @@ footer{
     position: absolute;
     bottom: 0%;
 }
+
+.produto{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color:lightgray;
+
+}
+
+#catalogo{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        flex-direction:row;
+}
+.produto img{
+    width: 100%;
+    border-radius: 5%;
+}
