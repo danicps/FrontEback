@@ -1,0 +1,57 @@
+/* animação step by step */
+@keyframes animacao {
+    0%{
+        background-color: darkred;
+    }
+    50%{
+        background-color: brown;
+    }
+    100%{
+        background-color: darkred;
+    }   
+}
+
+@font-face {
+    font-family: Darkmode;
+    src: url(../fonts/darkmode/Darkmode\ demo-Regular.ttf);
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family:"Roboto", sans-serif;
+}
+
+h1{
+    font-family: Darkmode, Arial; 
+}
+.caixa{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#caixa1{
+    background-color: darkslateblue;
+    transition: 1s;
+}
+#caixa1:hover{
+    border-radius: 100%;
+    transition: 1s;
+    animation: 1s animacao infinite;
+}
+
+#caixa2{
+    background-color: darkslategrey;
+    transition: 0.5s;
+}
+#caixa2:active{
+    width: 80%;
+    background-color: cadetblue;
+    transition: 0.5s;
+}
+#caixa3{
+    background-color: dimgrey;
+}
+
