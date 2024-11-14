@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaféBlog</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <h2>CaféBlog</h2> 
+        <nav></nav>
+    </header>
+
+   <div id="HOME">
+    <a href="#">Home</a>
+    <a href="#">Blog</a>
+    <a href="#">Contato</a>
+    <a href="#">Sobre Mim</a>
+   </div>
+       
+
+    <main>
+        <div id="banner">
+            <h2>As Vantagens do Café</h2>
+            <br>
+            <img src="images/imagens/nathan-dumlao-6VhPY27jdps-unsplash.jpg" alt="">
+            <br>
+
+            <p id="PARAGRAFO">
+                <h6>O café é uma das bebidas mais populares do mundo e altamente consumida no Brasil. Há quem não dispense começar o dia com a bebida. Outros preferem tomá-la depois do almoço, no cafezinho da tarde ou em todas essas situações. Independentemente da preferência de horário, o consumo de até quatro xícaras por dia tem sido associado a uma série de benefícios, que vão desde a prevenção da diabetes até a doença de Parkinson.</h6>
+                <br>
+                <h3>Quais são os benefícios do café para a saúde?</h3>
+                <br>
+                <h5>Contribui para o bom funcionamento do intestino</h5>
+                <br>
+                <h5>Melhora o desempenho de exercícios físicos</h5>
+                <br>
+                <h5>Reduz o risco de derrame e outras doenças como Parkinson</h5>
+                <br>
+                <h5>Ajuda na queima de gordura</h5>
+                <br>
+                <h5>Auxilia na performance cerebral e melhora o humor</h5>
+            </p>
+
+        </div>
+    </main>
+    <footer> 
+        <div id="rodape">
+            <p>Todos os direitos reservados a Danielle Campos</p>
+        </div>
+    </footer> 
+</body>
+</html>
