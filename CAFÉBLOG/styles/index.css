@@ -40,13 +40,13 @@ nav{
     align-items: center;
 }
 
-#HOME{
+#home{
     width: 100%;
     padding: 10px 0px;
     background-color: rgb(235, 230, 223);
     color: rgb(46, 42, 5);
     font-family: 'Times New Roman', Times, serif ;
-    float: aline;
+    float:inline-end;
     text-decoration: none;
 }
 
