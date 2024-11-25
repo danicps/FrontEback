@@ -23,17 +23,8 @@ nav{
     gap: 10px;
 }
 
-#logo{
-    display: flex;
-    gap:20px;
-}
-
-#logo img{
-    width: 30px;
-}
-
 #catalogo{
-    width: 80%;
+    width: 100%;
     margin: 10px auto;
     padding: 20px;
     background-color: var(--branco);
@@ -56,11 +47,11 @@ nav{
     text-align: center;
 }
 
-button{
-    display: flex;
-    padding: 5px;
-}
 
 .filme img{
-    width: 80%;
+    width: 100%;
+}
+
+main{
+    text-align: center;
 }

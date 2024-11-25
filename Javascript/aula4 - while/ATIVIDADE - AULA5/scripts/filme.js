@@ -1,5 +1,5 @@
 function carregarCatalogo(){
-    var livros = [
+    var filme = [
         ['images/charada.jpeg', 'CHARADA'],
         ['images/Eraserhead.jpg', 'ERASERHEAD'],
         ['images/house.jpg', 'HOUSE'],
@@ -12,14 +12,9 @@ function carregarCatalogo(){
     
     filme.forEach(cadaFilme => {
         document.getElementById('catalogo').innerHTML += `
-        <div class="livro">
+        <div class="filme">
             <img src="${cadaFilme[0]}" alt="">
             <h4>${cadaFilme[1]}</h4>
-
-        <button>
-            Adicionar
-            <img src="images/icons/mais.svg" alt="Adicionar">
-        </button>
     </div>
         `
     })
