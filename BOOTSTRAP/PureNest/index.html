@@ -15,7 +15,7 @@
         <!-- w- (width) (0,25,50,75,100) -->
         <!-- h- (height) -->
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">Salv</a>
+          <a class="navbar-brand text-light" href="#">PureNest</a>
         <!-- botao mobile -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,38 +37,53 @@
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Encontrar produto" aria-label="Search">
-              <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
+              <button class="btn btn-outline-green" type="submit">Pesquisar</button>
             </form>
           </div>
         </div>
       </nav>
     </header>
 
-    <main>
-        <div id="carouselExample" class="carousel slide">
+    <main>    
+        <section id="banner">
+          <div id="carouselExampleIndicators" class="carousel slide w-75 my-3 mx-auto shadow-lg">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/legumes.jpg" class="d-block w-100" alt="...">
+                <img src="images/banner1.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="images/moraguinho.jpg" class="d-block w-100" alt="...">
+                <img src="images/banner2.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="images/saudavel.jpg" class="d-block w-100" alt="...">
+                <img src="images/banner3.png" class="d-block w-100" alt="...">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        </section>
+
+        <section id="categorias" class="container-fluid d-flex flex-column align-items-center">
+          <h1>CATEGORIAS</h1>
+          <!-- CATEGORIAS ITEMS PARA O JAVASCRIPT -->
+          <div id="categoriaItems" class="container-fluid d-flex my-4 justify-content-center flex-wrap gap-4">
+            <!-- ITEMS JS -->
+            
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <script src="scripts/script.js"></script>
 </body>
 </html>
