@@ -1,69 +1,83 @@
-*{
-    padding: 0%;
+* {
     margin: 0%;
-}
- 
-body{
-    background-color: blueviolet;
-    text-align: center;
-       
+    padding: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
 }
 
-header,footer{
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+
     width: 100%;
-    padding: 30px 0px;
-    background-color: rgb(34, 23, 2);
-    color: azure;
-    font-family: 'Times New Roman', Times, serif ;
-    float: aline;
-    text-align: center;
+    height: 50px;
+    background-color:black;
 }
 
-
-nav{
-    float: right;
-    margin-right: 20px;
+#cabecalho img {
+    height: 50px;
+    position: absolute;
+    left: 75px;
 }
 
-
-#rodape{
-    position:absolute;
-    bottom:0%;
-}
-
-
-.img{
-    width: 1%;
-    background-color: rgb(253, 251, 231);
-    border-radius: 10px;
-    margin: 0px;
-    align-items: center;
-}
-
-#home{
+#cabecalho div{
     width: 100%;
-    padding: 10px 0px;
-    background-color: rgb(235, 230, 223);
-    color: rgb(46, 42, 5);
-    font-family: 'Times New Roman', Times, serif ;
-    float:inline-end;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    color: white;
+}
+
+#navegacao {
+    width: 100%;
+    height: 50px;
+    background-color: wheat;
+    text-align: center;
+    line-height: 50px;
+}
+
+#navegacao nav {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+}
+
+#navegacao nav a {
     text-decoration: none;
+    color: brown;
 }
 
-#banner{ 
-    background-color: rgb(234, 229, 223);
-    color: rgb(88, 59, 31);
-    font-family: 'Times New Roman', Times, serif ;
-    float: center;
-    padding: 10px 0px;
-    margin: 50px;
-    border-radius: 3%;
-    
-    
-}
-
-#PARAGRAFO{
-    text-align: justify;
+main {
+    display: flex;
     margin: 20px;
+    justify-content: center;
 }
+
+main div {
+    width: 80%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+main img {
+    width: 50%;
+    border-radius: 30px;
+}
+
+
+
+
+
+
 
