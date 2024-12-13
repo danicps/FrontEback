@@ -1,54 +1,92 @@
-
+// Dados das receitas
 const receitas = {
     Salgado: [
-      {
-        nome: "Empadão de Frango",
-        ingredientes: "Frango, creme de leite, massa folhada, temperos",
-        preparo: "Misture o frango desfiado com temperos, cubra com massa folhada e asse."
-      }
+        {
+            titulo: "Empada de Frango",
+            descricao: "Empada de massa crocante com recheio cremoso de frango.",
+            imagem: "empada.jpeg",
+            ingredientes: [
+                "2 xícaras de farinha de trigo",
+                "1/2 xícara de manteiga",
+                "1/2 xícara de leite",
+                "1 peito de frango desfiado",
+                "Temperos a gosto"
+            ],
+            preparo: "Misture os ingredientes da massa, recheie com o frango temperado e asse por 30 minutos."
+        },
+        {
+            titulo: "Coxinha",
+            descricao: "Clássica coxinha recheada com frango desfiado.",
+            imagem: "https://via.placeholder.com/300x200?text=Coxinha",
+            ingredientes: [
+                "1 litro de água",
+                "2 xícaras de farinha de trigo",
+                "1 colher de manteiga",
+                "Frango desfiado para o recheio"
+            ],
+            preparo: "Prepare a massa com a água e farinha, recheie com frango e frite em óleo quente."
+        }
     ],
     Doce: [
-      {
-        nome: "Brigadeiro",
-        ingredientes: "Leite condensado, chocolate em pó, manteiga",
-        preparo: "Misture os ingredientes em fogo baixo até engrossar. Modele em bolinhas."
-      }
+        {
+            titulo: "Brigadeiro",
+            descricao: "Delicioso doce de leite condensado e chocolate.",
+            imagem: "https://via.placeholder.com/300x200?text=Brigadeiro",
+            ingredientes: [
+                "1 lata de leite condensado",
+                "2 colheres de chocolate em pó",
+                "1 colher de manteiga"
+            ],
+            preparo: "Misture tudo em uma panela, mexa até desgrudar do fundo e enrole em bolinhas."
+        }
     ],
-    Sucos: [
-      {
-        nome: "Suco de Laranja com Cenoura",
-        ingredientes: "Laranja, cenoura, açúcar ou mel",
-        preparo: "Bata no liquidificador a laranja e a cenoura com água e coe."
-      }
+    Suco: [
+        {
+            titulo: "Suco de Laranja",
+            descricao: "Refrescante suco natural de laranja.",
+            imagem: "https://via.placeholder.com/300x200?text=Suco+de+Laranja",
+            ingredientes: [
+                "4 laranjas",
+                "500 ml de água gelada",
+                "Açúcar a gosto"
+            ],
+            preparo: "Esprema as laranjas, adicione a água e o açúcar, misture bem e sirva."
+        }
     ]
-  };
-  
+};
 
-  function exibirReceitas() {
-    const container = document.getElementById("receitas");
-  
-  
-    for (const categoria in receitas) {
+// Função para exibir as receitas de uma categoria
+function mostrarReceitas(categoria) {
+    const receitasContainer = document.getElementById("receitas");
+    receitasContainer.innerHTML = ""; // Limpa o conteúdo anterior
 
-      const categoriaDiv = document.createElement("div");
-      categoriaDiv.classList.add("categoria");
-      categoriaDiv.innerHTML = `<h2>${categoria}</h2>`;
-  
-
-      receitas[categoria].forEach(receita => {
-        const receitaDiv = document.createElement("div");
-        receitaDiv.classList.add("receita");
-        receitaDiv.innerHTML = `
-          <h3>${receita.nome}</h3>
-          <p><strong>Ingredientes:</strong> ${receita.ingredientes}</p>
-          <p><strong>Modo de Preparo:</strong> ${receita.preparo}</p>
+    receitas[categoria].map((receita) => {
+        const receitaCard = `
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="${receita.imagem}" class="card-img-top" alt="${receita.titulo}">
+                    <div class="card-body">
+                        <h5 class="card-title">${receita.titulo}</h5>
+                        <p class="card-text">${receita.descricao}</p>
+                        <button class="btn btn-primary" onclick="abrirModalReceita('${categoria}', '${receita.titulo}')">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
         `;
-        categoriaDiv.appendChild(receitaDiv);
-      });
-  
-      container.appendChild(categoriaDiv);
-    }
-  }
-  
-  exibirReceitas();
-  
+        receitasContainer.innerHTML += receitaCard;
+    });
+}
+
+// Função para abrir o modal com detalhes da receita
+function abrirModalReceita(categoria, titulo) {
+    const receita = receitas[categoria].find((r) => r.titulo === titulo);
+
+    document.getElementById("modalReceitaLabel").innerText = receita.titulo;
+    document.getElementById("modalIngredientes").innerHTML = receita.ingredientes
+        .map((ingrediente) => `<li>${ingrediente}</li>`)
+        .join("");
+    document.getElementById("modalPreparo").innerText = receita.preparo;
+
+    const modal = new bootstrap.Modal(document.getElementById("modalReceita"));
+    modal.show();
+}
