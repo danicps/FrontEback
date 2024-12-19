@@ -4,7 +4,7 @@ const receitas = {
         {
             titulo: "Empada de Frango",
             descricao: "Empada de massa crocante com recheio cremoso de frango.",
-            imagem: "empada.jpeg",
+            imagem: "https://cdn0.tudoreceitas.com/pt/posts/7/8/1/empadinha_de_frango_cremosa_9187_orig.jpg",
             ingredientes: [
                 "2 xícaras de farinha de trigo",
                 "1/2 xícara de manteiga",
@@ -17,7 +17,7 @@ const receitas = {
         {
             titulo: "Coxinha",
             descricao: "Clássica coxinha recheada com frango desfiado.",
-            imagem: "https://via.placeholder.com/300x200?text=Coxinha",
+            imagem: "https://www.comidaereceitas.com.br/wp-content/uploads/2022/11/coxinha.jpg",
             ingredientes: [
                 "1 litro de água",
                 "2 xícaras de farinha de trigo",
@@ -31,7 +31,7 @@ const receitas = {
         {
             titulo: "Brigadeiro",
             descricao: "Delicioso doce de leite condensado e chocolate.",
-            imagem: "https://via.placeholder.com/300x200?text=Brigadeiro",
+            imagem: "https://static.welban.com.br/public/welban/imagens/produtos/brigadeiro-pronto-para-enrolar-500g-doces-italiano-665730e1180cb.jpg",
             ingredientes: [
                 "1 lata de leite condensado",
                 "2 colheres de chocolate em pó",
@@ -44,7 +44,7 @@ const receitas = {
         {
             titulo: "Suco de Laranja",
             descricao: "Refrescante suco natural de laranja.",
-            imagem: "https://via.placeholder.com/300x200?text=Suco+de+Laranja",
+            imagem: "https://agro.estadao.com.br/app/uploads/2024/03/suco-laranja-2.jpg",
             ingredientes: [
                 "4 laranjas",
                 "500 ml de água gelada",
