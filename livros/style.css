@@ -1,0 +1,50 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.banner {
+  background-color: #4e1402;
+  padding: 50px 0;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+
+.book-card {
+  margin-top: 30px;
+  justify-content:center ;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.modal-body {
+  font-size: 1rem;
+}
+
+
+.modal-dialog {
+  max-width: 800px;
+}
+
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+
+.col-md-4 {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px;      
+}
+
