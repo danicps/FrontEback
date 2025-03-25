@@ -31,6 +31,9 @@
         case 'lista';
             include('pages/listaCarros/listaCarros.php');
             break;
+        case 'adicionarCarro';
+            include('pages/listaCarros/listaCarros.php');
+            break;
         default;
             include("pages/home/home.php");
             break;

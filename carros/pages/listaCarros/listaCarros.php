@@ -1,5 +1,9 @@
 <h1>VOCE ESTÁ NA LISTA DE CARROS</h1>
 
+<a href="index.php?menu=adicionarCarro">
+    <button type="button">ADICIONAR CARRO</button>
+</a>
+
 <table>
     <tr>
         <th>Modelo</th>
