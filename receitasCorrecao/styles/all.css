@@ -1,0 +1,24 @@
+:root{
+    --corPrimaria: #ccd5ae;
+    --corSecundaria: #e9edc9;
+    --corTerciaria: #fefae0;
+    --verde: #081c15;
+}
+
+header{
+    background-color: var(--corSecundaria);
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:var(--verde)!important;
+}
+
+#bg_banner{
+    height: 300px!important;
+    background-image: url(https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2022/05/03124339/hamburguer-8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
